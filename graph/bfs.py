@@ -18,8 +18,11 @@ class BreadthFirstSearch(object):
 
             # for items in the adjacency list of the current node
             for n in actual_node.adj_list:
+                # if the node is not visited
                 if not n.visited:
+                    # set it to visited
                     n.visited = True
+                    # add it to the queue
                     queue.append(n)
 
 
