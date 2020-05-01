@@ -12,10 +12,12 @@ class DepthFirstSearch(object):
 
         # for items in the adjacency list of the current node
         for n in start_node.adj_list:
+            # if the node is not visited
             if not n.visited:
+                # do the dfs algorithm recursively
                 self.dfs(n)
 
-
+# initialize the graph ( nodes and edges)
 node1 = Node('a')
 node2 = Node('b')
 node3 = Node('c')
@@ -27,5 +29,6 @@ node1.adj_list.append(node3)
 node2.adj_list.append(node4)
 node4.adj_list.append(node5)
 
+# using the algorithm
 dfs = DepthFirstSearch()
 dfs.dfs(node1)
