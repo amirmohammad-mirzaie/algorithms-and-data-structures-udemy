@@ -26,6 +26,7 @@ class BreadthFirstSearch(object):
                     queue.append(n)
 
 
+# creating a graph
 
 node1 = Node('a')
 node2 = Node('b')
@@ -38,5 +39,6 @@ node1.adj_list.append(node3)
 node2.adj_list.append(node4)
 node4.adj_list.append(node5)
 
+# using the algorithm to search through the graph
 bfs = BreadthFirstSearch()
 bfs.bfs(node1)
